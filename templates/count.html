@@ -1,0 +1,9 @@
+<h2> Your text have {{ words }} words! </h2>
+
+<a href="{% url 'homep' %}"> Start again </a>
+<h2> This is your text: </h2>
+{{ text }}
+{% for word,count in worddic %}
+{{word}} - {{count}}
+<br />
+{% endfor %}
